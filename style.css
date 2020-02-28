@@ -1,0 +1,172 @@
+* { margin: 0; padding: 0; }
+
+html { height: 100%; font-size: 62.5% }
+
+body { height: 100%; background-color: #FFFFFF; font: 1.2em Verdana, Arial, Helvetica, sans-serif; }
+
+
+/* ==================== Form style sheet ==================== */
+
+table.form { margin: 0 auto; padding:50px; margin-top: 50px;  border: 1px solid #DDDDDD; }
+
+table.form th, table.form td { padding: 4px 5px 10px; text-align: left; font-weight: normal; }
+
+table.form label { font-family: Verdana, Arial, Helvetica, sans-serif;color:#2F7F96; margin-right: 12px; }
+table.form td span { font-size: 0.9em; color: #181818; margin-left: 8px; }
+table.form td samp { font: 1em Verdana, Arial, Helvetica, sans-serif; color: #000000; }
+
+table.form input { width: 340px; }
+table.form input.answer { width: 53px; }
+table.form textarea { width: 400px; height: 160px; }
+
+table.form input.inp-text, table.form input.answer, table.form textarea
+{ border: 1px solid #909090; padding: 2px; }
+
+table.form th.message-up { vertical-align: top !important; }
+
+table.form label.invisible { visibility: hidden; }
+
+table.form td.submit-button-right { text-align: right !important; }
+table.form input.submit-text { font: 1.4em Georgia, "Times New Roman", Times, serif; letter-spacing: 1px; width: auto; }
+
+table.form label.email { border-bottom: 1px dotted #000000; }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number],input[type=text],input[type=email],select,input[type=date],textarea{ border-color:#cccccc; height: 40px;font-size:17px; text-align:left; border-width:1px; border-radius:16px; border-style:solid;padding: 10px !important; box-shadow: 0px 0px 5px 0px rgba(42,42,42,.75);  } 
+		 input[type=number],input[type=text],input[type=email],input[type=select],input[type=date],textarea,select { outline:none; } 
+/* Firefox */
+input[type=number] {
+  -moz-appearance:textfield;
+}
+/* ==================== Form style sheet END ==================== */
+.thanks-text{margin-left: 250px; margin-top: 100px;}
+.tut{padding:60px 0 0 0; font: 1.4em Georgia, "Times New Roman", Times, serif; }
+
+.send_btn {
+    background: none repeat scroll 0 0 #2F7F96;
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font: bold 15px/43px Arial,Helvetica,sans-serif;
+    height: 35px;
+    width: 100px !important;
+	padding: 0px 15px 5px 15px;
+}
+table.blueTable {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  width: 80%;
+  text-align:center;
+  border-collapse: collapse;
+  margin:0 auto;
+}
+table.blueTable td, table.blueTable th {
+  border: 1px solid #AAAAAA;
+  padding: 8px 8px;
+}
+table.blueTable tbody td {
+  font-size: 14px;
+}
+table.blueTable tr:nth-child(even) {
+  background: #9FE8FF;
+}
+table.blueTable thead {
+  background: #2B9AA4;
+  background: -moz-linear-gradient(top, #60b3bb 0%, #40a4ad 66%, #2B9AA4 100%);
+  background: -webkit-linear-gradient(top, #60b3bb 0%, #40a4ad 66%, #2B9AA4 100%);
+  background: linear-gradient(to bottom, #60b3bb 0%, #40a4ad 66%, #2B9AA4 100%);
+  border-bottom: 2px solid #444444;
+}
+table.blueTable thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+  border-left: 2px solid #2F7F96;
+}
+table.blueTable thead th:first-child {
+  border-left: none;
+}
+
+table.blueTable tfoot {
+  font-weight: bold;
+  color: #FFFFFF;
+  background: #D0E4F5;
+  background: -moz-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+  background: -webkit-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+  background: linear-gradient(to bottom, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+}
+table.blueTable tfoot .links {
+  text-align: right;
+}
+table.blueTable tfoot .links a{
+  display: inline-block;
+  background: #1C6EA4;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #000 !important;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
